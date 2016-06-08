@@ -1,3 +1,8 @@
+.idea/
+out/
+*.iml
+*.iws
+
 # Built application files
 *.apk
 *.ap_
@@ -30,3 +35,15 @@ proguard/
 
 # Android Studio captures folder
 captures/
+
+# Maven
+log/
+target/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Mac
+.DS_Store
