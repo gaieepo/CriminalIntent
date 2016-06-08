@@ -2,6 +2,7 @@
 out/
 *.iml
 *.iws
+proguard-project.txt
 
 # Built application files
 *.apk
