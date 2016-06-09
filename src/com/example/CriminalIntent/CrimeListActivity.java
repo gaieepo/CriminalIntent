@@ -1,6 +1,7 @@
 package com.example.CriminalIntent;
 
-import android.app.Fragment;
+
+import android.support.v4.app.Fragment;
 
 /**
  * Created by gaieepo on 9/6/2016.
