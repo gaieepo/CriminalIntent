@@ -35,7 +35,7 @@ public class CrimeListFragment extends ListFragment {
 
         Intent i = new Intent(getActivity(), CrimePagerActivity.class);
         i.putExtra(CrimeFragment.EXTRA_CRIME_ID, c.getId());
-        startActivity(i);
+        startActivityForResult(i, 0);
     }
 
     private class CrimeAdapter extends ArrayAdapter<Crime> {
@@ -60,5 +60,10 @@ public class CrimeListFragment extends ListFragment {
 
             return convertView;
         }
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        ((CrimeAdapter) getListAdapter()).notifyDataSetChanged();
     }
 }
